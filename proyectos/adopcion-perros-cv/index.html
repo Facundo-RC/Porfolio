@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patitas Hogar | Adopción de Perros</title>
+  <meta
+    name="description"
+    content="Patitas Hogar conecta perros rescatados con familias responsables. Encuentra a tu nuevo mejor amigo."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="logo" href="#inicio">Patitas Hogar</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#perros">Perros</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#testimonios">Historias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-content container" id="inicio">
+      <div class="hero-text">
+        <p class="tag">Adopta, cuida, transforma una vida</p>
+        <h1>Encuentra al perro ideal para sumar amor a tu hogar</h1>
+        <p class="hero-description">
+          Somos una plataforma de adopción responsable que conecta perros rescatados
+          con familias comprometidas. Conoce historias reales, filtra por edad y
+          descubre a tu nuevo mejor amigo.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#perros">Ver perros</a>
+          <a class="btn btn-secondary" href="#proceso">Cómo adoptar</a>
+        </div>
+        <div class="hero-stats">
+          <article>
+            <strong>+180</strong>
+            <span>Adopciones exitosas</span>
+          </article>
+          <article>
+            <strong>24h</strong>
+            <span>Tiempo de respuesta</span>
+          </article>
+          <article>
+            <strong>100%</strong>
+            <span>Seguimiento post adopción</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80"
+            alt="Perro feliz esperando ser adoptado"
+          >
+        </div>
+        <div class="hero-card-info">
+          <h2>Luna espera una familia</h2>
+          <p>
+            Tiene 2 años, es sociable, juguetona y perfecta para hogares con niños.
+          </p>
+          <button class="btn btn-primary" id="highlightDogBtn">Conocer a Luna</button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="featured section">
+      <div class="container featured-grid">
+        <article class="feature-item">
+          <h3>Perfiles verificados</h3>
+          <p>Cada perro cuenta con información clara sobre salud, carácter y necesidades.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Adopción responsable</h3>
+          <p>Evaluamos cada solicitud para asegurar un entorno seguro y amoroso.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Acompañamiento</h3>
+          <p>Te guiamos antes, durante y después del proceso de adopción.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="perros">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="tag">Perros destacados</p>
+            <h2>Conoce a los perros que buscan una nueva oportunidad</h2>
+          </div>
+          <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="cachorro">Cachorros</button>
+            <button class="filter-btn" data-filter="joven">Jóvenes</button>
+            <button class="filter-btn" data-filter="adulto">Adultos</button>
+          </div>
+        </div>
+
+        <div class="dog-grid" id="dogGrid">
+          <article class="dog-card" data-category="joven">
+            <img
+              src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80"
+              alt="Luna, perra en adopción"
+            >
+            <div class="dog-card-content">
+              <span class="badge">Joven</span>
+              <h3>Luna</h3>
+              <p>2 años | Mediana | Cariñosa y sociable</p>
+              <button class="link-btn" data-dog="Luna">Quiero conocerla</button>
+            </div>
+          </article>
+
+          <article class="dog-card" data-category="cachorro">
+            <img
+              src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80"
+              alt="Toby, cachorro en adopción"
+            >
+            <div class="dog-card-content">
+              <span class="badge">Cachorro</span>
+              <h3>Toby</h3>
+              <p>6 meses | Pequeno | Curioso y divertido</p>
+              <button class="link-btn" data-dog="Toby">Quiero conocerlo</button>
+            </div>
+          </article>
+
+          <article class="dog-card" data-category="adulto">
+            <img
+              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=80"
+              alt="Max, perro adulto en adopción"
+            >
+            <div class="dog-card-content">
+              <span class="badge">Adulto</span>
+              <h3>Max</h3>
+              <p>5 años | Grande | Tranquilo y protector</p>
+              <button class="link-btn" data-dog="Max">Quiero conocerlo</button>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="proceso">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="tag">Proceso de adopción</p>
+          <h2>Adoptar es fácil cuando el proceso es claro</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step-card">
+            <span>01</span>
+            <h3>Explora perfiles</h3>
+            <p>Revisa perros disponibles, su personalidad y necesidades especiales.</p>
+          </article>
+          <article class="step-card">
+            <span>02</span>
+            <h3>Completa el formulario</h3>
+            <p>Nos ayudas a entender tu estilo de vida y el entorno donde vivira.</p>
+          </article>
+          <article class="step-card">
+            <span>03</span>
+            <h3>Coordinamos una visita</h3>
+            <p>Programamos un encuentro para asegurar una buena compatibilidad.</p>
+          </article>
+          <article class="step-card">
+            <span>04</span>
+            <h3>Recibe acompañamiento</h3>
+            <p>Seguimos en contacto para que la integración sea positiva y segura.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section-heading narrow">
+          <p class="tag">Historias reales</p>
+          <h2>Familias que cambiaron su vida con una adopción</h2>
+        </div>
+
+        <div class="testimonials">
+          <article class="testimonial-card">
+            <p>
+              "Adoptamos a Max hace 8 meses y hoy es parte esencial de nuestra familia.
+              El proceso fue ordenado y muy humano."
+            </p>
+            <h3>Camila y Diego</h3>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              "Nos ayudaron a encontrar una perrita compatible con nuestros hijos.
+              Luna llego a casa y todo cambio para mejor."
+            </p>
+            <h3>Familia Rojas</h3>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              "La plataforma transmite confianza y muestra muy bien la información de
+              cada perro. Excelente proyecto."
+            </p>
+            <h3>Martin Perez</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contacto">
+      <div class="container cta-box">
+        <div>
+          <p class="tag">Da el primer paso</p>
+          <h2>Comienza hoy el proceso de adopción</h2>
+          <p>
+            Completa tu solicitud y te ayudaremos a encontrar al perro ideal para tu hogar.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <select name="interes" required>
+            <option value="">Me interesa...</option>
+            <option value="cachorro">Adoptar un cachorro</option>
+            <option value="joven">Adoptar un perro joven</option>
+            <option value="adulto">Adoptar un perro adulto</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <a class="logo" href="#inicio">Patitas Hogar</a>
+      
+      </div>
+      <div class="footer-links">
+        <a href="#perros">Perros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

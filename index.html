@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio Facundo Robaño</title>
+  <meta name="description" content="Porfolio web animado con estilo galactico para presentar experiencia, habilidades y proyectos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="fondo-espacial" aria-hidden="true">
+    <div class="nebula nebula-izquierda"></div>
+    <div class="nebula nebula-derecha"></div>
+    <div class="estrellas" id="estrellas"></div>
+    <div class="cuadricula-brillo"></div>
+  </div>
+
+  <header class="encabezado">
+    <nav class="barra-nav">
+      <div class="enlaces-nav">
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#habilidades-tecnicas">Habilidades técnicas</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada seccion" id="inicio">
+      <div class="portada-texto revelar">
+        <h1>Facundo Robaño <span class="texto-degradado">Desarrollador web y analista en sistemas</span></h1>
+        <p>
+          Soy un perfil enfocado en crear interfaces modernas, claras y con
+          impacto visual. Este espacio resume quien soy, lo que puedo aportar
+          y el tipo de trabajo que quiero construir.
+        </p>
+        <div class="portada-acciones">
+          <a href="#proyectos" class="boton boton-primario">Ver proyectos</a>
+          <a href="#contacto" class="boton boton-secundario">Contactarme</a>
+        </div>
+      </div>
+
+      <div class="portada-panel revelar">
+        <div class="tarjeta-orbital">
+          <div class="estado-pill">
+            <span class="estado-punto"></span>
+            En busqueda activa
+          </div>
+          <h2>Skills</h2>
+
+          <div class="metricas">
+            <article class="tarjeta-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo de HTML">
+              <span>HTML</span>
+            </article>
+            <article class="tarjeta-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo de CSS">
+              <span>CSS</span>
+            </article>
+            <article class="tarjeta-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo de JavaScript">
+              <span>JavaScript</span>
+            </article>
+            <article class="tarjeta-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="Logo de C Sharp">
+              <span>C#</span>
+            </article>
+            <article class="tarjeta-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="Logo de SQL">
+              <span>SQL</span>
+            </article>
+            <article class="tarjeta-logo">
+              <img src="https://cdn.simpleicons.org/dotnet/512BD4" alt="Logo de .NET">
+              <span>.NET</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="sobre-mi">
+      <div class="titulo-seccion revelar">
+        <h2>Sobre mi</h2>
+      </div>
+
+      <div class="grilla-sobre-mi">
+        <article class="tarjeta-vidrio revelar">
+          <h3>Quien soy</h3>
+          <p>
+            Soy Analista de Sistemas y estudiante de Desarrollo Full Stack.
+             Me apasiona transformar problemas complejos en soluciones digitales eficientes 
+             y estoy en constante formación para dominar las últimas tecnologías del sector.
+          </p>
+        </article>
+
+        <article class="tarjeta-vidrio revelar">
+          <h3>Que ofrezco</h3>
+          <p> 
+           Capacidad analítica para el diseño de sistemas y habilidades técnicas para desarrollar interfaces funcionales.
+            Destaco por mi rapidez de aprendizaje, proactividad para resolver problemas 
+            y un enfoque orientado al trabajo en equipo y la calidad del código.
+          </p>
+        </article>
+
+        <article class="tarjeta-vidrio revelar">
+          <h3>Que busco</h3>
+          <p>
+            Mi primera oportunidad como Desarrollador Full Stack Junior en proyectos desafiantes
+             donde pueda aportar mis bases técnicas y seguir creciendo profesionalmente en un entorno de innovación.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" id="habilidades-tecnicas">
+      <div class="titulo-seccion revelar">
+        <h2>Habilidades tecnicas</h2>
+      </div>
+
+      <div class="grilla-habilidades">
+        <article class="tarjeta-vidrio revelar">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML semantico</li>
+            <li>CSS moderno y responsive</li>
+            <li>JavaScript interactivo</li>
+          </ul>
+        </article>
+
+        <article class="tarjeta-vidrio revelar">
+          <h3>Herramientas</h3>
+          <ul>
+            <li>Git y GitHub</li>
+            <li>SQL</li>
+            <li>VS Code</li>
+          </ul>
+        </article>
+
+        <article class="tarjeta-vidrio revelar">
+          <h3>Habilidades personales</h3>
+          <ul>
+            <li>Comunicacion</li>
+            <li>Aprendizaje continuo</li>
+            <li>Atencion al detalle</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" id="proyectos">
+      <div class="titulo-seccion revelar">
+        <h2>Muestras de trabajo</h2>
+      </div>
+
+      <div class="grilla-proyectos">
+        <article class="tarjeta-proyecto revelar">
+          <span class="etiqueta-proyecto">Proyecto 01</span>
+          <h3>Adopcion</h3>
+          <p>
+            proyecto de adopcion , donde pude avanzar  bastante en js, css y html 
+          </p>
+          <a href="./proyectos/adopcion-perros-cv/index.html">Ver mas</a>
+        </article>
+
+        <article class="tarjeta-proyecto revelar">
+          <span class="etiqueta-proyecto">Proyecto 02</span>
+          <h3>Automotora</h3>
+          <p>
+           proyecto de automotora.  sigue en construcion.
+          </p>
+          <a href="./proyectos/automotora/index.html">Ver mas</a>
+        </article>
+
+        <article class="tarjeta-proyecto revelar">
+          <span class="etiqueta-proyecto">Proyecto 03</span>
+          <h3>Motocross</h3>
+          <p>
+           uno  de mis primeros proyectos , ecommerce de Motocross. donde uso el login.  
+          </p>
+          <a href="./proyectos/Motocross/index.html">Ver mas</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" id="contacto">
+      <div class="contenedor-contacto revelar">
+        <div>
+          <h2>Listo para despegar hacia una nueva oportunidad</h2>
+          
+        </div>
+
+        <div class="enlaces-contacto">
+          <a href="mailto:facurob2002@gmail.com">
+            <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Logo de Gmail">
+            <span>facurob2002@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/facundo-roba%C3%B1o-1b584221b/" target="_blank" rel="noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Logo de LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Facundo-RC" target="_blank" rel="noreferrer">
+            <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="Logo de GitHub">
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
