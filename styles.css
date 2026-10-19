@@ -414,6 +414,13 @@ main {
   font-weight: 700;
 }
 
+/* Fila de enlaces cuando una tarjeta tiene mas de uno (demo y codigo). */
+.enlaces-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .contenedor-contacto {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
